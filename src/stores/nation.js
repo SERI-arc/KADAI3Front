@@ -78,12 +78,12 @@ export const useNationStore = defineStore('nation', {
       await axios.post(
         'https://m3h-serita-kadai3.greensea-425e64c6.japaneast.azurecontainerapps.io/api/WANT/INSERT',
         {
-          nation: this.nation,
-          capital: this.capital,
-          region: this.area,
-          flag: this.flag,
-          comment: this.comment,
-        },
+          Nation: this.nation,
+          Capital: this.capitalLists,
+          Region: this.area,
+          Flag: this.flag,
+          Comment: this.comment,
+       },
       )
     },
 
@@ -92,7 +92,7 @@ export const useNationStore = defineStore('nation', {
         'https://m3h-serita-kadai3.greensea-425e64c6.japaneast.azurecontainerapps.io/api/WENT/INSERT',
         {
           Nation: this.nation,
-          Capital: this.capital,
+          Capital: this.capitalLists,
           Region: this.area,
           Flag: this.flag,
           Comment: this.comment,
